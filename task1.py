@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-
 """
 For Linux usage only
 
-Example:
-
-    sudo python3 task1.py -i 0.01 'curl https://ya.ru'
+Usage example:
+    sudo python3 task1.py -i 0.01 'ping -c 4 ya.ru'
 
 """
 
@@ -24,13 +22,13 @@ OUTPUT_FILE = path.join(
         'process_statistics.csv')
 
 def main():
-
     """
     1. Run process via psutil.Popen
     2. Open/create csv file
     3. Get resource usage info from process, /proc/<pid>/fd/
     4. Write info to csv
     5. Wait process stops
+    
     """
 
     parser = ArgumentParser(
