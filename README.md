@@ -26,7 +26,7 @@ sudo pip3 install psutil
 ## Использование
 #### Запуск
 ```bash
-sudo ./task1.py [-h] [-i INTERVAL] command
+sudo python3 task1.py [-h] [-i INTERVAL] command
 ```
 #### Завершение работы
 `Ctrl`+`C`
